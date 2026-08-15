@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/broadsheet-55176c41-52ff-4aa0-b834-ca589626af2a/styles.css">
+<script src="_ds/broadsheet-55176c41-52ff-4aa0-b834-ca589626af2a/_ds_bundle.js"></script>
+<style>
+:root{--leading:28px;--half:14px;--edge:clamp(20px,5vw,72px);--measure:62ch}
+body{margin:0;text-wrap:pretty}
+a{color:var(--color-accent-700)}
+a:hover{color:var(--color-accent-2-700)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 var(--edge)}
+.nav{padding-inline:max(var(--edge),calc((100% - 1080px) / 2 + var(--edge)));position:sticky;top:0;background:color-mix(in srgb, var(--color-bg) 92%, transparent);backdrop-filter:blur(6px);z-index:10}
+.nav a{white-space:nowrap}
+@media (max-width:560px){.nav a{display:none}}
+.kicker{display:block;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 70%, transparent);margin:0 0 calc(var(--leading) - var(--half))}
+section{padding:calc(2.5 * var(--leading)) 0}
+.hero{padding-top:calc(3 * var(--leading));display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--leading) clamp(24px,5vw,64px);align-items:center}
+.hero .display{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:clamp(38px,5.5vw,64px);line-height:1.05;letter-spacing:-0.02em;margin:0}
+.hero .role{font-family:var(--font-heading);font-style:italic;font-size:clamp(20px,2.4vw,26px);color:var(--color-accent-700);margin:calc(var(--half)) 0 0}
+.hero .sub{font-size:17px;line-height:var(--leading);max-width:52ch;margin:var(--half) 0 0;color:color-mix(in srgb, var(--color-text) 82%, transparent)}
+.hero .row{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--leading)}
+.hero-figure{margin:0}
+.hero-figure .print{aspect-ratio:3/4;border-radius:var(--radius-md)}
+.cols{display:grid;gap:calc(1.5 * var(--leading)) clamp(24px,4vw,56px)}
+.skills-grid{grid-template-columns:repeat(4,1fr)}
+.skill-group h3{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:18px;margin:0 0 var(--half)}
+.skill-group ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:15px;color:color-mix(in srgb, var(--color-text) 82%, transparent)}
+.exp-list{display:flex;flex-direction:column;gap:calc(1.5 * var(--leading))}
+.exp-item{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:var(--space-4)}
+.exp-when{font-size:13px;letter-spacing:0.04em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 65%, transparent)}
+.exp-role{font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:19px;margin:0 0 4px}
+.exp-company{font-size:15px;color:var(--color-accent-700);margin:0 0 6px}
+.exp-desc{font-size:15px;line-height:1.6;margin:0;color:color-mix(in srgb, var(--color-text) 82%, transparent)}
+.proj-grid{grid-template-columns:repeat(2,1fr)}
+.proj-title{display:flex;align-items:center;gap:10px}
+.proj-stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:var(--half)}
+.other-grid{grid-template-columns:repeat(2,1fr);margin-top:calc(1.5 * var(--leading))}
+.other-head{font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:color-mix(in srgb, var(--color-text) 65%, transparent);margin:calc(2 * var(--leading)) 0 var(--half)}
+.tags-row{display:flex;flex-wrap:wrap;gap:8px}
+.close{padding-bottom:calc(3 * var(--leading))}
+.close .row{display:flex;flex-wrap:wrap;gap:var(--space-3);margin-top:var(--leading)}
+footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in srgb, var(--color-text) 65%, transparent)}
+@media (max-width:840px){.hero{grid-template-columns:1fr}.hero-figure{order:-1;max-width:280px}.skills-grid,.proj-grid,.other-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.exp-item{grid-template-columns:1fr}.skills-grid,.proj-grid,.other-grid{grid-template-columns:1fr}}
+</style>
+</helmet>
+
+<nav class="nav">
+  <span class="nav-brand">Renato Silveira</span>
+  <a href="#about">Sobre</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experiência</a>
+  <a href="#projects">Projetos</a>
+  <a href="#contact">Contato</a>
+  <a class="btn btn-primary" href="uploads/resume_file-1786756363215-l2cv.pdf" download>Currículo</a>
+</nav>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div>
+      <span class="kicker">AI Engineer</span>
+      <h1 class="display">Renato Silveira</h1>
+      <p class="role">AI Engineer</p>
+      <p class="sub">AI Engineer com base sólida em engenharia de software com Java/Spring desenvolvendo sistemas robustos e escaláveis, agora focado em construir sistemas de IA — RAG, LLMs e modelos de machine learning aplicados a problemas reais.</p>
+      <div class="row">
+        <a class="btn btn-primary" href="#projects">Ver projetos</a>
+        <a class="btn btn-ghost" href="#contact">Contato</a>
+      </div>
+    </div>
+    <figure class="hero-figure cmyk">
+      <div class="print">
+        <img src="uploads/photo-1786755666008-rorg.jpg" alt="Renato Silveira">
+        <img class="sep-c" src="uploads/photo-1786755666008-rorg.jpg" alt="" aria-hidden="true">
+        <img class="sep-m" src="uploads/photo-1786755666008-rorg.jpg" alt="" aria-hidden="true">
+        <img class="sep-y" src="uploads/photo-1786755666008-rorg.jpg" alt="" aria-hidden="true">
+        <img class="sep-k" src="uploads/photo-1786755666008-rorg.jpg" alt="" aria-hidden="true">
+      </div>
+    </figure>
+  </section>
+
+  <section id="about">
+    <span class="kicker">Sobre</span>
+    <p class="sub" style="font-size:17px;line-height:var(--leading);max-width:var(--measure)">Atuo há mais de 4 anos como desenvolvedor backend em times de médio e grande porte — Java, Spring, microsserviços, nuvem. Nos últimos projetos venho migrando o foco para engenharia de IA: RAG com Spring AI e LLMs locais via Ollama, e modelagem preditiva com Python e scikit-learn/XGBoost. Gosto de resolver problemas reais com dados e de levar sistemas de IA da prototipagem à produção.</p>
+  </section>
+
+  <section id="skills">
+    <span class="kicker">Skills</span>
+    <div class="cols skills-grid">
+      <div class="skill-group">
+        <h3>IA &amp; Machine Learning</h3>
+        <ul>
+          <li>RAG (Retrieval-Augmented Generation)</li>
+          <li>Spring AI, LangChain-style pipelines</li>
+          <li>LLMs locais (Ollama — llama3.2, nomic-embed-text)</li>
+          <li>pgvector</li>
+          <li>scikit-learn, XGBoost, LightGBM</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Linguagens</h3>
+        <ul>
+          <li>Java 17+</li>
+          <li>Python 3.11+</li>
+          <li>JavaScript/TypeScript</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Backend &amp; Dados</h3>
+        <ul>
+          <li>Spring AI, Spring Boot, Microservices</li>
+          <li>FastAPI, Streamlit</li>
+          <li>PostgreSQL, Oracle, SQL Server</li>
+          <li>Pandas</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Cloud &amp; DevOps</h3>
+        <ul>
+          <li>AWS, Azure</li>
+          <li>CI/CD</li>
+          <li>Docker</li>
+          <li>Flyway, JWT</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <span class="kicker">Experiência</span>
+    <div class="exp-list">
+      <div class="exp-item">
+        <div class="exp-when">Ago 2023 – Mar 2024</div>
+        <div>
+          <p class="exp-role">Desenvolvedor Backend Pleno</p>
+          <p class="exp-company">GFT Technologies</p>
+          <p class="exp-desc">Desenvolvimento backend com Java 17, Spring e SQL Server.</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-when">Jun 2022 – Jul 2023</div>
+        <div>
+          <p class="exp-role">Cloud Application Developer</p>
+          <p class="exp-company">IBM</p>
+          <p class="exp-desc">Líder backend em Java 11/Spring com arquitetura de microsserviços, implantação em AWS e Azure.</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-when">Set 2021 – Mai 2022</div>
+        <div>
+          <p class="exp-role">Desenvolvedor Backend Pleno</p>
+          <p class="exp-company">QAT Global</p>
+          <p class="exp-desc">Desenvolvimento em Java/Spring com Oracle DB e MyBatis.</p>
+        </div>
+      </div>
+      <div class="exp-item">
+        <div class="exp-when">Abr 2021 – Set 2021</div>
+        <div>
+          <p class="exp-role">Desenvolvedor Full Stack</p>
+          <p class="exp-company">Logic Fábrica de Software</p>
+          <p class="exp-desc">Java 7 EE e GWT, com SQL Server, Oracle e pipelines de CI/CD.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <span class="kicker">Projetos</span>
+    <div class="cols proj-grid">
+      <div class="card elev-sm">
+        <span class="card-kicker">Featured</span>
+        <h3 class="card-title">ai-knowledge-assistant</h3>
+        <p class="card-body">Assistente de conhecimento com RAG: recupera contexto de uma base de documentos e gera respostas com LLMs locais. Java 21, Spring AI, Ollama (llama3.2 / nomic-embed-text), PostgreSQL com pgvector, JWT e Flyway.</p>
+        <div class="proj-stack">
+          <span class="tag tag-accent">Spring AI</span>
+          <span class="tag tag-accent">RAG</span>
+          <span class="tag tag-neutral">pgvector</span>
+          <span class="tag tag-neutral">Ollama</span>
+        </div>
+        <p class="card-meta"><a href="https://github.com/rensilver/ai-knowledge-assistant" target="_blank" rel="noopener">github.com/rensilver/ai-knowledge-assistant →</a></p>
+      </div>
+      <div class="card elev-sm">
+        <span class="card-kicker">Featured</span>
+        <h3 class="card-title">used-car-price</h3>
+        <p class="card-body">Modelo de regressão para estimar o preço de carros usados a partir de suas características, com comparação entre algoritmos e API de predição. Python, Pandas, scikit-learn, XGBoost, LightGBM, FastAPI e Streamlit.</p>
+        <div class="proj-stack">
+          <span class="tag tag-accent-2">XGBoost</span>
+          <span class="tag tag-accent-2">Regression</span>
+          <span class="tag tag-neutral">FastAPI</span>
+          <span class="tag tag-neutral">Streamlit</span>
+        </div>
+        <p class="card-meta"><a href="https://github.com/rensilver/used-car-price" target="_blank" rel="noopener">github.com/rensilver/used-car-price →</a></p>
+      </div>
+    </div>
+
+    <p class="other-head">Outros projetos</p>
+    <div class="cols other-grid">
+      <div class="card">
+        <h3 class="card-title">Population Growth Report</h3>
+        <p class="card-body">Streamlit app com Gemini AI API — pipeline de ETL em Python, Pandas e Matplotlib.</p>
+        <p class="card-meta"><a href="https://github.com/rensilver/population-growth-report" target="_blank" rel="noopener">github.com/rensilver/population-growth-report →</a></p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Sales Analytics Dashboard</h3>
+        <p class="card-body">Dashboard analítico em Streamlit conectado a um banco MySQL, usando SQLAlchemy e Pandas.</p>
+        <p class="card-meta"><a href="https://github.com/rensilver/mystore-sales" target="_blank" rel="noopener">github.com/rensilver/mystore-sales →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <span class="kicker">Certificações</span>
+    <div class="tags-row">
+      <span class="tag tag-outline">AWS Certified Developer</span>
+      <span class="tag tag-outline">IBM Python for Data Science, AI &amp; Development</span>
+      <span class="tag tag-outline">IBM Machine Learning with Python</span>
+    </div>
+  </section>
+
+  <section class="close" id="contact">
+    <span class="kicker">Contato</span>
+    <h3 style="font-family:var(--font-heading);font-weight:var(--font-heading-weight);font-size:24px;margin:0">Vamos conversar sobre IA e engenharia</h3>
+    <div class="row">
+      <a class="btn btn-primary" href="mailto:ren.oliv87@gmail.com">ren.oliv87@gmail.com</a>
+      <a class="btn btn-secondary" href="https://www.linkedin.com/in/renato-silveira-78a0613b5/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn btn-ghost" href="https://github.com/rensilver" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Renato Silveira</footer>
+</div>
+
+</x-dc>
+</body>
+</html>
