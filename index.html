@@ -68,8 +68,8 @@ footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in sr
     <div>
       <span class="kicker">AI Engineer</span>
       <h1 class="display">Renato Silveira</h1>
-      <p class="role">De Backend Engineer a AI Engineer</p>
-      <p class="sub">AI Engineer com base sólida em engenharia backend com Java/Spring desenvolvendo APIs e microservices robustos e escaláveis, agora focado em construir sistemas de IA — RAG, LLMs e modelos de machine learning aplicados a problemas reais.</p>
+      <p class="role">Especialista em Engenharia de Inteligência Artificial</p>
+      <p class="sub">AI Engineer com experiência prática no desenvolvimento de soluções que integram modelos avançados de IA Generativa a sistemas computacionais. Desenvolve aplicações de IA utilizando RAG, LLMs e modelos de Machine Learning e Deep Learning aplicados a problemas reais. Já trabalhou em desenvolvimento backend utilizando Java, Spring, Azure e AWS, desenvolvendo APIs e microsserviços em empresas como a IBM.</p>
       <div class="row">
         <a class="btn btn-primary" href="#projects">Ver projetos</a>
         <a class="btn btn-ghost" href="#contact">Contato</a>
@@ -88,7 +88,64 @@ footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in sr
 
   <section id="about">
     <span class="kicker">Sobre</span>
-    <p class="sub" style="font-size:17px;line-height:var(--leading);max-width:var(--measure)">Atuo há mais de 4 anos como desenvolvedor backend em times de médio e grande porte — Java, Spring, microsserviços, nuvem. Nos últimos projetos venho migrando o foco para engenharia de IA: RAG com Spring AI e LLMs locais via Ollama, e modelagem preditiva com Python e scikit-learn/XGBoost. Gosto de resolver problemas reais com dados e de levar sistemas de IA da prototipagem à produção.</p>
+    <p class="sub" style="font-size:17px;line-height:var(--leading);max-width:var(--measure)">Atuo em projetos práticos de aplicações com IA Generativa, utilizando a engenharia de IA com RAG e LLMs locais (Ollama), APIs (Gemini e OpenAI) e algoritmos de Machine Learning e Deep Learning com redes neurais. Gosto de resolver problemas reais de negócio e de levar sistemas de IA da prototipagem à produção.</p>
+  </section>
+
+  <section id="projects">
+    <span class="kicker">Projetos</span>
+    <div class="cols proj-grid">
+      <div class="card elev-sm">
+        <span class="card-kicker">Featured</span>
+        <h3 class="card-title">AI Knowledge Assistant</h3>
+        <p class="card-body">Assistente de conhecimento com RAG: recupera contexto de uma base de documentos e gera respostas com LLMs locais. Java 21, Spring AI, Ollama (llama3.2 / nomic-embed-text), PostgreSQL com pgvector, JWT e Flyway.</p>
+        <div class="proj-stack">
+          <span class="tag tag-accent">Spring AI</span>
+          <span class="tag tag-accent">RAG</span>
+          <span class="tag tag-neutral">pgvector</span>
+          <span class="tag tag-neutral">Ollama</span>
+        </div>
+        <p class="card-meta">
+          <a href="https://github.com/rensilver/ai-knowledge-assistant" target="_blank" rel="noopener">github.com/rensilver/ai-knowledge-assistant →</a>
+          <a href="https://github.com/rensilver/ai-knowledge-assistant-frontend" target="_blank" rel="noopener">github.com/rensilver/ai-knowledge-assistant-frontend →</a>
+        </p>
+      </div>
+      <div class="card elev-sm">
+        <span class="card-kicker">Featured</span>
+        <h3 class="card-title">Used Car Price Predictor</h3>
+        <p class="card-body">Modelo de regressão para estimar o preço de carros usados a partir de suas características, com comparação entre algoritmos e API de predição. Python, Pandas, scikit-learn, XGBoost, LightGBM, FastAPI e Streamlit.</p>
+        <div class="proj-stack">
+          <span class="tag tag-accent">XGBoost</span>
+          <span class="tag tag-accent">Regression</span>
+          <span class="tag tag-neutral">FastAPI</span>
+          <span class="tag tag-neutral">Streamlit</span>
+        </div>
+        <p class="card-meta"><a href="https://github.com/rensilver/used-car-price" target="_blank" rel="noopener">github.com/rensilver/used-car-price →</a></p>
+      </div>
+      <div class="card elev-sm">
+        <span class="card-kicker">Featured</span>
+        <h3 class="card-title">Aircraft Damage Classification</h3>
+        <p class="card-body">Modelo de classificação de danos em aeronaves utilizando Redes Neurais artificiais com Keras, VGG16 para extração, BLIP para descrição e LLM Qwen3 4B para gerar um relatório técnico dos danos. Python, Keras, VGG16, BLIP, LLM Qwen3, Docker e Streamlit.</p>
+        <div class="proj-stack">
+          <span class="tag tag-accent">Keras</span>
+          <span class="tag tag-accent">VGG16</span>
+          <span class="tag tag-neutral">BLIP</span>
+          <span class="tag tag-neutral">LLM Qwen 3</span>
+        </div>
+        <p class="card-meta"><a href="https://github.com/rensilver/aircraft-damage-classification" target="_blank" rel="noopener">github.com/rensilver/aircraft-damage-classification →</a></p>
+      </div>
+      <div class="card elev-sm">
+        <span class="card-kicker">Featured</span>
+        <h3 class="card-title">Population Growth Report</h3>
+        <p class="card-body">Relatório dinâmico com Gemini API e dados de crescimento populacional extraídos de API do IBGE. Python, Pandas, Matplotlib, Gemini API, Streamlit.</p>
+        <div class="proj-stack">
+          <span class="tag tag-accent">Gemini API</span>
+          <span class="tag tag-accent">Pandas</span>
+          <span class="tag tag-neutral">Matplotlib</span>
+          <span class="tag tag-neutral">Streamlit</span>
+        </div>
+        <p class="card-meta"><a href="https://github.com/rensilver/population-growth-report" target="_blank" rel="noopener">github.com/rensilver/population-growth-report →</a></p>
+      </div>
+    </div>
   </section>
 
   <section id="skills">
@@ -135,10 +192,10 @@ footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in sr
   </section>
 
   <section id="experience">
-    <span class="kicker">Experiência</span>
+    <span class="kicker">Experiência profissional</span>
     <div class="exp-list">
       <div class="exp-item">
-        <div class="exp-when">Ago 2023 – Mar 2024</div>
+        <div class="exp-when">Jul 2023 – Ago 2023</div>
         <div>
           <p class="exp-role">Desenvolvedor Backend Pleno</p>
           <p class="exp-company">GFT Technologies</p>
@@ -146,7 +203,7 @@ footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in sr
         </div>
       </div>
       <div class="exp-item">
-        <div class="exp-when">Jun 2022 – Jul 2023</div>
+        <div class="exp-when">Jun 2022 – Jun 2023</div>
         <div>
           <p class="exp-role">Cloud Application Developer</p>
           <p class="exp-company">IBM</p>
@@ -156,7 +213,7 @@ footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in sr
       <div class="exp-item">
         <div class="exp-when">Set 2021 – Mai 2022</div>
         <div>
-          <p class="exp-role">Desenvolvedor Backend Pleno</p>
+          <p class="exp-role">Analista Desenvolvedor de Sistemas</p>
           <p class="exp-company">QAT Global</p>
           <p class="exp-desc">Desenvolvimento em Java/Spring com Oracle DB e MyBatis em um projeto internacional.</p>
         </div>
@@ -164,7 +221,7 @@ footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in sr
       <div class="exp-item">
         <div class="exp-when">Abr 2021 – Set 2021</div>
         <div>
-          <p class="exp-role">Desenvolvedor Full Stack</p>
+          <p class="exp-role">Desenvolvedor de Software</p>
           <p class="exp-company">Logic Fábrica de Software</p>
           <p class="exp-desc">Sistema legado com Java 7 EE e GWT, com SQL Server, Oracle e pipelines de CI/CD.</p>
         </div>
@@ -172,59 +229,13 @@ footer{padding:calc(1.5 * var(--leading)) 0;font-size:13px;color:color-mix(in sr
     </div>
   </section>
 
-  <section id="projects">
-    <span class="kicker">Projetos</span>
-    <div class="cols proj-grid">
-      <div class="card elev-sm">
-        <span class="card-kicker">Featured</span>
-        <h3 class="card-title">AI Knowledge Assistant</h3>
-        <p class="card-body">Assistente de conhecimento com RAG: recupera contexto de uma base de documentos e gera respostas com LLMs locais. Java 21, Spring AI, Ollama (llama3.2 / nomic-embed-text), PostgreSQL com pgvector, JWT e Flyway.</p>
-        <div class="proj-stack">
-          <span class="tag tag-accent">Spring AI</span>
-          <span class="tag tag-accent">RAG</span>
-          <span class="tag tag-neutral">pgvector</span>
-          <span class="tag tag-neutral">Ollama</span>
-        </div>
-        <p class="card-meta">
-          <a href="https://github.com/rensilver/ai-knowledge-assistant" target="_blank" rel="noopener">github.com/rensilver/ai-knowledge-assistant →</a>
-          <a href="https://github.com/rensilver/ai-knowledge-assistant-frontend" target="_blank" rel="noopener">github.com/rensilver/ai-knowledge-assistant-frontend →</a>
-        </p>
-      </div>
-      <div class="card elev-sm">
-        <span class="card-kicker">Featured</span>
-        <h3 class="card-title">Used Car Price Predictor</h3>
-        <p class="card-body">Modelo de regressão para estimar o preço de carros usados a partir de suas características, com comparação entre algoritmos e API de predição. Python, Pandas, scikit-learn, XGBoost, LightGBM, FastAPI e Streamlit.</p>
-        <div class="proj-stack">
-          <span class="tag tag-accent-2">XGBoost</span>
-          <span class="tag tag-accent-2">Regression</span>
-          <span class="tag tag-neutral">FastAPI</span>
-          <span class="tag tag-neutral">Streamlit</span>
-        </div>
-        <p class="card-meta"><a href="https://github.com/rensilver/used-car-price" target="_blank" rel="noopener">github.com/rensilver/used-car-price →</a></p>
-      </div>
-    </div>
-
-    <p class="other-head">Outros projetos</p>
-    <div class="cols other-grid">
-      <div class="card">
-        <h3 class="card-title">Population Growth Report</h3>
-        <p class="card-body">Streamlit app com Gemini AI API — pipeline de ETL em Python, Pandas e Matplotlib.</p>
-        <p class="card-meta"><a href="https://github.com/rensilver/population-growth-report" target="_blank" rel="noopener">github.com/rensilver/population-growth-report →</a></p>
-      </div>
-      <div class="card">
-        <h3 class="card-title">Sales Analytics Dashboard</h3>
-        <p class="card-body">Dashboard analítico em Streamlit conectado a um banco MySQL, usando SQLAlchemy e Pandas.</p>
-        <p class="card-meta"><a href="https://github.com/rensilver/mystore-sales" target="_blank" rel="noopener">github.com/rensilver/mystore-sales →</a></p>
-      </div>
-    </div>
-  </section>
-
   <section id="certifications">
     <span class="kicker">Certificações</span>
     <div class="tags-row">
-      <span class="tag tag-outline">AWS Certified Developer</span>
+      <span class="tag tag-outline">AWS Certified Developer - Associate</span>
       <span class="tag tag-outline">IBM Python for Data Science, AI &amp; Development</span>
       <span class="tag tag-outline">IBM Machine Learning with Python</span>
+      <span class="tag tag-outline">IBM Deep Learning with Keras and Tensorflow</span>
     </div>
   </section>
 
